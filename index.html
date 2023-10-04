@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <script>
+        const urls = [
+            'https://images.wallpaperscraft.ru/image/single/kot_morda_agressiia_56702_2560x1440.jpg', 
+            'https://w-dog.ru/wallpapers/5/18/289291145046987/evropejskaya-koshka-dikij-kot-morda-vzglyad.jpg', 
+            'http://tapeciarnia.pl/tapety/normalne/245584_kot_spojrzenie_poduszka.jpg']
+        const mySlider = new slider(urls)
+    </script>
+</head>
+<body>
+    <div class="slider-block">
+        <div class="slider-block__image-block">
+            <img id='slide' src='#' class="slider-block__image-block__image" alt=""/>
+        </div>
+        <div class="slider-block__button-block">
+            <div>
+                <button id='first' onclick="mySlider.setFirst()" class="slider-block__button-block__button">&lt;&lt;</button>
+                <button id='prev' onclick="mySlider.prev()" class="slider-block__button-block__button">&lt;</button>
+            </div>
+            <div>
+                <button id='next' onclick="mySlider.next()" class="slider-block__button-block__button">&gt;</button>
+                <button id='last' onclick="mySlider.setLast()" class="slider-block__button-block__button">&gt;&gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        mySlider.setFirst()
+    </script>
+</html>

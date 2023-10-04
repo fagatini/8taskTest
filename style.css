@@ -1,0 +1,30 @@
+.slider-block {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+}
+
+.slider-block__image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+
+.slider-block__image-block__image {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.slider-block__button-block {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider-block__button-block__button {
+    width: 80px;
+    font-size: 20px;
+}
