@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    gap:20px;
+    position: relative;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form__button {
+    font-size: 20px;
+    width: 100px;
+}
+
+.form__input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 3px solid grey;
+    width: 300px;
+}
+
+.form__input #focus {
+    font-size: 20px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-color: azure;
+    width: 300px;
+}
+
+.form__wrong-input {
+    display: none;
+    position: absolute;
+    color:red;
+    font-size: 20px;
+    bottom: 20px;
+}
