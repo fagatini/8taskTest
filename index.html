@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-triangle" onclick="triangleClick()">
+        <div id="triangle" class="box-triangle__triangle"></div>
+    </div>
+    <div class="box-rectangle" onclick="rectangleClick()">
+        <div id="rectangle" class="box-rectangle__rectangle"></div>
+    </div>
+    <div id="square" class="square" onclick="squareClick()"></div>
+    <div class="box-round" onclick="roundClick()">
+        <div id="round" class="box-round__round"></div>
+    </div>
+</body>
+<script>
+    const rectangleClick = () => document.getElementById('rectangle').style.animation="rectangleMove 6s linear 4";
+    const squareClick = () => document.getElementById('square').style.animation="squarePulse 6s linear 4";
+    const roundClick = () => document.getElementById('round').style.animation="roundJump 2s linear 4";
+    const triangleClick = () => document.getElementById('triangle').style.animation="triangleRotate 6s linear 4";
+</script>
+</html>

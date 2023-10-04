@@ -1,0 +1,115 @@
+@keyframes triangleRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@keyframes squarePulse {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.75;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@keyframes rectangleMove {
+    from {
+        left:0px
+    }
+    50% {
+        left:100px
+    }
+    to {
+        left:0px
+    }
+}
+
+@keyframes roundJump {
+    from {
+        left:75px;
+        bottom: 0px;
+    }
+    25% {
+        left:0px;
+        bottom: 75px;
+    }
+    50% {
+        left:75px;
+        bottom: 150px;
+    }
+    75% {
+        left:150px;
+        bottom: 75px;
+    }
+    to {
+        left:75px;
+        bottom: 0px;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.box-triangle {
+    width: 100px; 
+    height: 50px;
+}
+
+.box-triangle__triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid black;
+  }
+
+.square {
+    width: 50px; 
+    height: 50px;
+    background-color: black;
+}
+
+.box-rectangle {
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+
+.box-rectangle__rectangle {
+    width: 100px; 
+    height: 50px;
+    background-color: black;
+    position: absolute;
+}
+
+.box-round {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.box-round__round {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:75px;
+    bottom: 0px;
+    background-color: black;
+    border-radius: 50%;
+}
