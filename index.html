@@ -9,10 +9,10 @@
 <body>
     <div class="video-block">
       <video id="video" class="video-block__video">
-        <source src="rickroll.mp4" type="video/mp4">
-        <source src="rickroll.webm" type="video/webm">
-        <!-- <source src="2.mp4" type="video/mp4">
-        <source src="2.webm" type="video/webm"> -->
+        <!-- <source src="rickroll.mp4" type="video/mp4"> -->
+        <!-- <source src="rickroll.webm" type="video/webm"> -->
+        <source src="2.mp4" type="video/mp4">
+        <source src="2.webm" type="video/webm">
       </video>
       <div class="video-block__timer-block">
         <p id="timer" class="video-block__timer-block__timer"></p>
@@ -35,6 +35,10 @@
         let seconds = time - minutes * 60;
         if(seconds<10) seconds = '0' + seconds
         timer.innerHTML = minutes + '.' + seconds
+    });
+    video.addEventListener("ended", (event) => {
+        video.pause();
+        video.currentTime = 0;
     });
 </script>
 </html>
